@@ -13,7 +13,7 @@ This workspace has this layout:
                     circle.go
         bin/
            circle
-           
+
 A more general Go workspace could follow this layout pattern:
 
     $GOPATH/
@@ -26,29 +26,29 @@ A more general Go workspace could follow this layout pattern:
                 myapp.go
         bin/
            myapp
-           
+
 ## Create a workspace
 
-Create the workspace directory and set the environment variable GOATH.
+Create the workspace directory and set the environment variable GOPATH.
 
     mkdir /foo/bar/workspace
     export GOPATH=/foo/bar/workspace
-   
-The GOPATH environment variable tells the Go tool where can find the workspace.
+
+The GOPATH environment variable tells the Go tool where it can find the workspace.
 
     go get github.com/kspichale/golang-samples
-   
+
 This command fetches the source repository from github and places it into the workspace. The Go tool recognizes "github.com" in the package path.
 
     go install github.com/kspichale/golang-samples/types
-   
-Finally the Go install command is used to build the sources. The binary is placed in $GOPATH/bin/.
+
+Finally the Go install command is used to build the sources. The binary is placed in $GOPATH/bin/. What else can you do with to Go tool?
 
     build     compile pkg and deps
     get       download and install pkg and deps
     install   compile and install pkg and deps
     test      test pkg
 
-You now can continue fetching other repositories with go get. You could install for instance the testing library [gocheck](https://labix.org/gocheck):
+You now can continue fetching other repositories. You could for instance install the testing library [gocheck](https://labix.org/gocheck) that is used in circle_tett.go.
 
     go get gopkg.in/check.v1
