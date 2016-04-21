@@ -49,6 +49,6 @@ Finally the Go install command is used to build the sources. The binary is place
     install   compile and install pkg and deps
     test      test pkg
 
-You now can continue fetching other repositories. You could for instance install the testing library [gocheck](https://labix.org/gocheck) that is used in circle_tett.go.
+You now can continue fetching other repositories. You could for instance install the testing library [gocheck](https://labix.org/gocheck) that is used in circle_test.go.
 
     go get gopkg.in/check.v1
