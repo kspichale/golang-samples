@@ -1,19 +1,19 @@
 package main
 
 import (
-  "fmt"
-  "math"
+	"fmt"
+	"math"
 )
 
-type Circle struct {
+type circle struct {
 	radius float64
 }
 
-func (c Circle) Area() float64 {
+func (c circle) Area() float64 {
 	return math.Pi * c.radius * c.radius
 }
 
 func main() {
-	c := Circle{2}
+	c := circle{2}
 	fmt.Println(c.Area())
 }
