@@ -44,11 +44,18 @@ This command fetches the source repository from github and places it into the wo
 
 Finally the Go install command is used to build the sources. The binary is placed in $GOPATH/bin/. What else can you do with to Go tool?
 
-    build     compile pkg and deps
-    get       download and install pkg and deps
-    install   compile and install pkg and deps
-    test      test pkg
+    build   - compile pkg and deps
+    get     - download and install pkg and deps
+    install - compile and install pkg and deps
+    test    - test pkg
 
 You now can continue fetching other repositories. You could for instance install the testing library [gocheck](https://labix.org/gocheck) that is used in circle_test.go.
 
     go get gopkg.in/check.v1
+
+The Go tools are:
+
+    go fmt  - format source code
+    go vet  - report suspicious code
+    golint  - report coding style errors
+    godoc   - browse documenation
